@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{  
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    letter-spacing: 3.5px;
+    z-index: 2;
+    background-color: white;
+    width: 100%;
+}
+header h3{
+    display: flex;
+    gap: 10px;
+    font-weight: 2;
+   
+}
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+}
+.img{
+    position:relative;
+    margin-bottom:50px ;
+    width: 100%;
+}
+.img img{
+    width: 100%;
+    object-fit: contain;
+
+}
+.hero-title{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    letter-spacing: 2px;
+}
+.br{
+    background-color: rgba(0, 0, 0, .55);
+    color: white;
+    padding: 15px 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.hero-title span{
+    font-size: 30px;
+    color: white;
+}
+main{
+    padding: 10px 30px;
+    
+}
+main .title p{
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+main .title span{
+    font-size: 20px;
+}
+main .title hr{
+    margin-bottom: 40px;
+}
+.projects{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 15px;
+}
+.projectPhotos{
+    width: 310px;
+    height: 200px;
+    margin-bottom: 50px;
+}
+.projectPhotos p{
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 2;
+}
+.projectPhotos img{
+    width: 100%;
+    vertical-align: middle;
+    position: relative;
+}
+.about{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.aboutPhotos{
+    width: 310px;
+    /* height: 205px; */
+}
+.aboutPhotos img{
+    width: 100%;
+}
+.aboutPhotos h2{
+    font-weight: 2;
+    margin-top: 20px;
+}
+.aboutPhotos p{
+    color: rgb(165, 165, 165);
+    margin-top:20px;
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+.aboutPhotos span{
+    font-size: 19px;
+}
+.aboutPhotos button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 17px; 
+    margin-top: 10px;
+}
+.aboutPhotos button:hover{
+    background-color: rgb(122, 122, 122);
+    cursor: pointer;
+}
+form input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 10px 5px;
+    font-size: 17px;
+    margin-top: 20px;
+}
+form button{
+    background-color: black;
+    padding: 10px 15px;
+    color: white;
+    font-size: 16.5px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.locationimg img{
+    width: 100%;
+}
+footer{
+    margin-top:10px ;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    color: white;
+    background-color: black;
+}
+@media  ( max-width:768px){
+    .projects{
+        /* display: grid; */
+        grid-template-columns: auto  auto;
+        margin-bottom: 200px;
+    
+    }
+    .about{
+        grid-template-columns: auto  auto;
+        margin-bottom: 200px;
+    
+    }
+    header{
+        position: relative;
+        width: auto;
+    }
+
+    
+}
+@media(max-width:600px){
+    .projects{
+        grid-template-columns: auto;
+        margin-bottom: 200px;
+    
+    }
+    .about{
+        grid-template-columns: auto;
+        margin-bottom: 200px;
+    
+    }
+    header div{
+        display: none;
+    }
+    .projectPhotos,.aboutPhotos{
+        width: 100%;
+    }
+
+}
